@@ -1,0 +1,50 @@
+.body-ok{
+    fill: green
+}
+
+.body-danger{
+    fill:red
+}
+
+.human-body-container{
+    height: 75vh;
+}
+.human-body-container svg{
+    height: 100%;
+    width: auto;
+}
+
+
+
+.right{
+    float: right;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.right > div{
+    margin: 3px;
+}
+
+
+.panel-container{
+    display: flex;
+}
+
+.btn-custom{
+    border-radius: 0;
+}
+
+.status-bar{
+    display: flex;
+    flex-direction: column
+}
+
+.battery{
+    font-size: 1.2rem
+}
+
+#battery-percentage{
+    font-size: 1rem;
+}
