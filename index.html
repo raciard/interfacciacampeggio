@@ -7,13 +7,16 @@
     
     <script type="text/javascript" src="./smoothie/smoothie.js"></script>
     <script type="text/javascript" src="./atest.js"></script>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/99c51c6896.js" crossorigin="anonymous"></script>
+
 </head>
 <body onload="createTimeline()">
     <div class="navbar">
         <h1>Y<span>ou</span>W<span>ear</span>IC<span>are</span></h1>
+        <a href="http://www.ittgiorgi.edu.it" style="width: 10%; max-width: 80px; min-width: 30px;" class="ml-auto"><img src="./img/logo_g.png" alt="" style="max-width: 100%;" ></a>
     </div>
     <div class="panel-container m-3">
         <div class="human-body-container">
@@ -30,8 +33,19 @@
             </svg> 
             </div>
             <div class="status-bar">
-                <div class="card" style="width: 33%">
-                    <div class="battery card-body text-success text-center" style="padding: 3px">⚡ <span id="battery-percentage">80%</span></div>
+                <div class="card" style="">
+                    <div class="battery card-body text-success text-center" style="padding: 3px"><i class="fas fa-car-battery"></i> <span id="battery-percentage">80%</span></div>
+                </div>
+
+                <div class="card " style="">
+                    <div class="battery card-body text-success text-center" style="padding: 3px"><i class="fas fa-wifi"></i> <span id="battery-percentage">OK</span></div>
+                </div>
+
+                <div class="card" style="">
+                    <div class="battery card-body text-success text-center" style="padding: 3px"><i class="fas fa-bolt mr-2"></i> <span id="battery-percentage">OK</span></div>
+                </div>
+                <div class="card" style="">
+                    <div class="battery card-body text-success text-center" style="padding: 3px"><i class="fas fa-water mr-2"></i> <span id="battery-percentage">OK</span></div>
                 </div>
             </div>
         </div> 
@@ -39,16 +53,18 @@
             <div> 
                 <div class="card"> 
                     <div class="card-body">
-                         Battito: <span class="text-success">98bpm</span> 
+                         Battito: <span class="text-success">98 bpm</span>
+                         <p class="text-muted date mb-0">Ultima misurazione: 05:34 <i class="fas fa-sync"></i></p>
                     </div>
                  </div> 
             </div> 
             
-            <div> 
+            <div>
                 
                 <div class="card"> 
                     <div class="card-body">
                         Pressione: <span class="text-success">110 mmHg</span> 
+                        <p class="text-muted date mb-0">Ultima misurazione: 06:01 <i class="fas fa-sync"></i></p>
                     </div> 
                 </div> 
             </div>            
@@ -81,9 +97,9 @@
                 </div> 
             </div>
             <div style='display: flex; justify-content: space-between'>
-                <button class="btn btn-primary btn-custom">Audio 1</button>
+                <button class="btn btn-primary btn-custom mr-1">Audio 1</button>
 
-                <button class="btn btn-primary btn-custom">Audio 2</button>
+                <button class="btn btn-primary btn-custom mr-1">Audio 2</button>
 
                 <button class="btn btn-primary btn-custom">Audio 3</button>
             </div>

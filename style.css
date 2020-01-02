@@ -1,7 +1,7 @@
 body {
         background-color: black;
         color: #ccc;
-                  
+        width: fit-content;     
 }
     
 
@@ -51,7 +51,8 @@ body {
 
 .status-bar{
     display: flex;
-    flex-direction: column
+    flex-direction: row;
+    justify-content: start
 }
 
 .battery{
@@ -68,5 +69,16 @@ body {
 
 
 h1 span{
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.date{
+    font-size: 0.9rem;
+}
+
+
+.status-bar .card{
+    margin-right: 5px;
+    min-width: 20%;
 }
